@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Not Found</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="color: gold; font-family: 'Courier New', Courier, monospace;">City Not Found</h1>
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-bottom: 1rem;">Try Again?</h2>
+    <form action="/weather">
+      <input type="text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" name="city" id="city" placeholder="Enter a City">
+      <button type="submit" style="background-color: cyan; font-weight: bold;">SEND</button>
+    </form>
+  </div>
+</body>
+
+</html>
